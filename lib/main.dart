@@ -22,3 +22,11 @@ void main() async {
     MyApp(),
   );
 }
+
+
+//this are comments for pushing code 
+// git checkout -b posting
+// to check the branch git branch
+// git add .
+// git commit -m "Added new feature in posting branch"
+// git push origin posting
