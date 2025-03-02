@@ -37,7 +37,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       keyboardType: widget.keyboardType,
       obscureText: widget.isPassword ? _obscureText : false,
       style:
-          const TextStyle(color: Colors.green), // Text turns green when typing
+          const TextStyle(color: Colors.white), // Text turns green when typing
       cursorColor: Colors.green, // Cursor color green
       decoration: InputDecoration(
         hintText: widget.hintText,

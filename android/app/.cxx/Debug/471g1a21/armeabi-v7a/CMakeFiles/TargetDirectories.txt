@@ -1,0 +1,2 @@
+C:/Users/Arfat/Akhil projects/socialmedia_app/android/app/.cxx/Debug/471g1a21/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Arfat/Akhil projects/socialmedia_app/android/app/.cxx/Debug/471g1a21/armeabi-v7a/CMakeFiles/rebuild_cache.dir

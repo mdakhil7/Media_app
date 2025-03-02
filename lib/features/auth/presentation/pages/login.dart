@@ -144,7 +144,6 @@
 //     );
 //   }
 // }
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:socialmedia_app/features/auth/presentation/cubit/auth_cubit.dart';
@@ -181,6 +180,14 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
+  void loginAsTestUser() {
+    setState(() {
+      emailController.text = "test@gmail.com";
+      passwordController.text = "Test@123";
+    });
+    login();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -189,7 +196,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.black, Colors.green,],
+              colors: [Colors.black, Colors.green],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -255,6 +262,18 @@ class _LoginPageState extends State<LoginPage> {
                       FocusScope.of(context).unfocus();
                       login();
                     },
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  // Login as Test User Button
+                  AnimatedButton(
+                    text: "Login as Test User",
+                    onPressed: () {
+                      FocusScope.of(context).unfocus();
+                      loginAsTestUser();
+                    },
+                    color: Colors.blueGrey,
                   ),
 
                   const SizedBox(height: 20),
