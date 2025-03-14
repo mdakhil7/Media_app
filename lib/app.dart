@@ -9,11 +9,13 @@ import 'package:socialmedia_app/features/auth/presentation/pages/auth.dart';
 import 'package:socialmedia_app/features/home/presentation/screens/home.dart';
 import 'package:socialmedia_app/features/profile/data/firebase_profile_repo.dart';
 import 'package:socialmedia_app/features/profile/presentation/cubit/profile_cubit.dart';
+import 'package:socialmedia_app/features/storage/data/firebase_storage_repo.dart';
 import 'package:socialmedia_app/themes/light_theme.dart';
 
 class MyApp extends StatelessWidget {
   final authRepo = FirebaseAuthRepo();
   final profileRepo = FirebaseProfileRepo();
+  final storageRrepo = FirebaseStorageRepo();
 
   MyApp({super.key});
 
@@ -24,7 +26,11 @@ class MyApp extends StatelessWidget {
         BlocProvider(
             create: (context) => AuthCubit(authRepo: authRepo)..checkAuth()),
         BlocProvider(
-            create: (context) => ProfileCubit(profileRepo: profileRepo)),
+          create: (context) => ProfileCubit(
+            profileRepo: profileRepo,
+            storageRepo: storageRrepo,
+          ),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
