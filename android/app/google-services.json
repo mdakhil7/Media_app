@@ -1,21 +1,22 @@
 {
   "project_info": {
-    "project_number": "577450694380",
-    "project_id": "media-fd362",
-    "storage_bucket": "media-fd362.firebasestorage.app"
+    "project_number": "1072842137623",
+    "firebase_url": "https://foodapp-49d1a-default-rtdb.firebaseio.com",
+    "project_id": "foodapp-49d1a",
+    "storage_bucket": "foodapp-49d1a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:577450694380:android:2343eb1e771850d9ba77c9",
+        "mobilesdk_app_id": "1:1072842137623:android:2de8693e98535dc332fc52",
         "android_client_info": {
-          "package_name": "com.beingbetter.socialmedia_app"
+          "package_name": "com.beingbetter.food_app"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCVgHUYPWHMXrX4Lr2oLiQIJjK20wZirmc"
+          "current_key": "AIzaSyBe7x4cks2_-NAL_VIMJGVHdJy6M6YwVLI"
         }
       ],
       "services": {

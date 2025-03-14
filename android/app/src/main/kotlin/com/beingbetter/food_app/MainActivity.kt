@@ -1,4 +1,4 @@
-package com.beingbetter.socialmedia_app
+package com.beingbetter.food_app
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -12,10 +12,14 @@ void main() async {
   ]);
   await Firebase.initializeApp(
     options: FirebaseOptions(
-      apiKey: 'AIzaSyCVgHUYPWHMXrX4Lr2oLiQIJjK20wZirmc',
-      appId: '1:577450694380:android:2343eb1e771850d9ba77c9',
-      messagingSenderId: '577450694380',
-      projectId: 'media-fd362',
+      apiKey: 'AIzaSyBe7x4cks2_-NAL_VIMJGVHdJy6M6YwVLI',
+      appId: '1:1072842137623:android:2de8693e98535dc332fc52',
+      messagingSenderId: '1072842137623',
+      projectId: 'foodapp-49d1a',
+      // apiKey: 'AIzaSyCVgHUYPWHMXrX4Lr2oLiQIJjK20wZirmc',
+      // appId: '1:577450694380:android:2343eb1e771850d9ba77c9',
+      // messagingSenderId: '577450694380',
+      // projectId: 'media-fd362',
     ),
   );
   runApp(

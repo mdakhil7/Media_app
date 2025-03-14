@@ -32,15 +32,23 @@ class _MyProfileState extends State<MyProfile> {
         ),
         centerTitle: true,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => EditProfile(),
-                ),
-              );
+          BlocBuilder<ProfileCubit, ProfileState>(
+            builder: (context, state) {
+              if (state is ProfileLoaded) {
+                return IconButton(
+                  icon: const Icon(Icons.settings),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            EditProfile(profileUser: state.profileUser),
+                      ),
+                    );
+                  },
+                );
+              }
+              return const SizedBox(); // Return empty widget when profile is not loaded
             },
           ),
         ],
